@@ -33,3 +33,4 @@ The designs were created to the following widths:
 
 - Family: [Karla](https://fonts.google.com/specimen/Karla)
 - Weights: 400, 700
+https://deviceatlas.com/blog/understanding-web-page-weight
