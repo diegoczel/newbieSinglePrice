@@ -1,30 +1,129 @@
+:root {
+  --color1: #29A699;
+  --color2: #4EBFB4;
+  --color3: #9AD96C;
+  --color4: #C5D932;
+  --color5: #F2F2F2;
+  --color6: #D8D8E0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
 }
 
-.container1 {
-  background-color: #fff;
+.container {
+  margin: 25px;
+  border: 1px solid var(--color6);
+  border-radius: 10px;
 }
 
-.container2 {
-  background-color: #3fb8b7;
-}
-.container3 {
-  background-color: #97ddde;
+.content1 {
+  padding: 25px;
 }
 
-.container2 button {
-  background-color: #bcdd3d;
+.content1 h1 {
+  color: var(--color1);
+  margin-bottom: 20px;
 }
 
-.container-row {
+.content1 h2 {
+  color: var(--color4);
+  margin-bottom: 15px;
+}
+
+.content1 p {
+  color: var(--color6);
+  line-height: 1.5;
+}
+
+.container2, .container3 {
   display: flex;
-  flex-direction: row;
 }
 
-@media screen and (max-width: 375px) {
-  .container-row {
+.container3 {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.content2 {
+  width: 50%;
+  padding: 25px;
+}
+
+.content2 .money {
+  font-size: 25px;
+  color: white;
+  margin-right: 25px;
+}
+
+.content2 h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content2 button {
+  background-color: var(--color4);
+  width: 100%;
+  padding: 15px 0;
+  border: 1px solid gray;
+  color: var(--color5);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.content2 {
+  background-color: var(--color1);
+  box-sizing: border-box;
+}
+
+.content2 p {
+  color: var(--color6);
+}
+
+.content3 {
+  width: 50%;
+  padding: 25px;
+}
+
+.content3 {
+  background-color: var(--color2);
+  box-sizing: border-box;
+}
+
+.content3 h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.content3 p {
+  color: var(--color6);
+  line-height: 1.3;
+}
+
+@media screen and (max-width: 426px) {
+  .container {
+    margin: 0;
+  }
+  .container2 {
     flex-direction: column;
+  }
+
+  .content1 {
+    padding: 5px;
+  }
+
+  .content2 {
+    width: 100%;
+    padding: 5px;
+  }
+  .content3 {
+    width: 100%;
+    padding: 5px;
   }
 }
